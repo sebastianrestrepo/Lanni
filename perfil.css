@@ -22,35 +22,73 @@ body{
     background: linear-gradient(225deg, rgba(81,81,83,1) 0%, rgba(52,49,53,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515153', endColorstr='#343135', GradientType=1 );
 
+    -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.2);
+
+
     width: 100%;
     height: 100vh;
 
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    z-index: 100;
+}
+
+.dash .contenedor{
+    width: 80%;
+    height: 94%;
+
+    display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     align-items: center;
+
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
 }
 
-.dash:nth-child(1n){
+.dash .contenedor:nth-child(1n){
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.dash .logo{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    padding-bottom: 20px;
+}
+
+.dash .logo img{
+    width: 70%;
+
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
 }
 
 .dash .salir{
-    padding: 20px 0;
     width: 100%;
-    /*
-    position: relative;
-    top: 370px;
-    */
 }
 
 .dash .salir a{
     padding: 12px 0;
-    padding-left: 25px;
     color: #f2f2f2;
     display: block;
     width: 100%;
@@ -99,6 +137,7 @@ body{
 
 .dash .menu{
     padding: 20px 0;
+    padding-top:200px;
     /*
     position: relative;
     top: 280px;
@@ -128,7 +167,6 @@ body{
 
 .dash .menu a{
     padding: 12px 0;
-    padding-left: 25px;
     color: #f2f2f2;
     display: block;
     width: 100%;
@@ -166,32 +204,29 @@ body{
 }
 
 .dash .profile{
-    /*
-    position: relative;
-    top: 20px;
-    */
-    padding: 20px 10px;
-
     text-align: center;
     color: white;
     width: 100%;
 
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-content: flex-start;
     align-items: center;
+
+    transition: .3s;
+}
+
+.dash .profile:hover{
+    box-shadow: 300px 0 rgba(249, 249, 249, 0.2) inset;
 }
 
 .dash .profile img{
-    padding-left: 15px;
-    width: 70px;
+    width: 55px;
 }
 
 .dash .profile div{
-    padding-left: 10px;
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
@@ -215,7 +250,7 @@ body{
 
 /*------------------------*/
 .main {
-    outline: 2px solid red; /*Esta es la linea roja*/
+    /*outline: 2px solid red; Esta es la linea roja*/
     background-image: url(src/profile/fondo.png);
     background-size: 100%;
     align-content: center;
