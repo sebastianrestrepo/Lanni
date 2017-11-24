@@ -215,7 +215,7 @@ body{
 
 .main {
     width: 100%;
-    /*outline: 2px solid red; Esta es la linea roja*/
+    outline: 2px solid red; /*Esta es la linea roja*/
 }
 
 .findpeople{
@@ -392,21 +392,21 @@ p{
     background-color: aqua;
     color: #f4f4f4;
     /* width: 100%;*/
-   /* position: relative;
+    /* position: relative;
     transform: translateY(-250px);*/
 }
 
 .cat img{
     width: 100%;
     /*color: #f4f4f4;*/
-   /* position: relative;
+    /* position: relative;
     transform: translateY(-250px);*/
 }
 
 .barra{
     width: 100%;
     background-color: #7ebed3;
-   /* position: relative;
+    /* position: relative;
     transform: translateY(-320px);*/
 }
 
@@ -417,8 +417,8 @@ p{
 
 .botonesbarra{
     color: red;
-   /* transform: translateY(-316px);
-      transform: translateX(30px);*/
+    /* transform: translateY(-316px);
+    transform: translateX(30px);*/
 }
 
 .botonesbarra button{
@@ -435,81 +435,43 @@ p{
 }
 
 .photogrid{
-    flex: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-bottom: 4%;
-}
-
-.photogrid izq{
-    flex: 1;
-    display: flex;
-
-    flex-direction: column;
-    margin-bottom: 4%;
-}
-
-.thexx{
-    flex: 1;
-    display: flex;
-    margin-left: 4%;
-    margin-right: 3%;
-}
-
-.eddievedder{
-    flex: 1;
-    display: flex;
-    margin-right: 3%;
-}
-
-.juliancont{
-    flex: 2;
-    display: flex;
-}
-
-.juliancasablancas img{
-
+    padding: 0;
     width: 100%;
-    height:100%;
-}
 
-.photogrid der{
-    flex: 1;
     display: flex;
-
-    flex-direction: column;
-    margin-bottom: 4%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 
-.jorgedrexler{
-    flex: 1;
+.photogrid:nth-child(1n){
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.photogrid div{     
+    width: 350px;
+    height: 290px;
+
     display: flex;
-    margin-right: 3%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
-.jorgedrexler img{
-border-radius: 5px;
-    width:70%;
-    height: 70%;
-}
-
-.ledzeppelin{
-    flex: 5;
-    display: flex;
-    margin-right: 4%;
-}
-
-.ledzeppelin img{
-border-radius: 5px;
-    width:70%;
-    height: 70%;
-}
-
-
-.photogrid img{
+.photogrid div img{   
+    width: 80%;
     border-radius: 5px;
-    width: 70%;
-    height: 70%;
+    transition: .3s;
+}
+
+.photogrid div img:hover{   
+    border-radius: 15px;
+    width: 90%;
 }
 

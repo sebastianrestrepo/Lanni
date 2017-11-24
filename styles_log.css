@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+
+    text-decoration: none;
+}
+
+body{
+    background: rgba(230,230,230,1);
+    background: -moz-linear-gradient(left, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(230,230,230,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(left, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(45deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#ffffff', GradientType=1 );
+}
+
+.izq{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+.izq .contenedor{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+
+    width: 90%;
+    height: 94%;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+.main .contenedor{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+
+    width: 90%;
+    height: 94%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+
+    padding: 10px 0; 
+}
+
+.main .contenedor:nth-child(1n){
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.main .contenedor .title{
+    color: #7BB8DE;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+
+    padding-bottom: 70px;
+}
+
+.main .contenedor .con{
+    width: 80%;
+    padding: 10px 0;
+}
+
+.main .contenedor .con .user[type=text]{
+    padding: 10px 10px;
+    width: 100%;
+    background: none;
+
+    color: #515151;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    border: 2px solid #515151;
+    border-radius: 5px;
+
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.main .contenedor .con .pass[type=text]{
+    padding: 10px 10px;
+    width: 100%;
+    background: none;
+
+    color: #515151;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    border: 2px solid #515151;
+    border-radius: 5px;
+
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.main .contenedor .con .user[type=text]:focus{
+    border-radius: 15px;
+    border: 2px solid #7BB8DE;
+}
+
+.main .contenedor .con .pass[type=text]:focus{
+    border: 2px solid #7BB8DE;
+    border-radius: 15px;
+}
+
+.main .contenedor .con a{
+    text-decoration: none;
+    width: 100%;
+}
+
+.main .contenedor .con a .log[type=button]{
+    padding: 10px 10px;
+    width: 100%;
+    background: none;
+
+    background: rgba(121,163,231,1);
+    background: -moz-linear-gradient(left, rgba(121,163,231,1) 0%, rgba(123,184,222,1) 33%, rgba(131,221,203,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(121,163,231,1)), color-stop(33%, rgba(123,184,222,1)), color-stop(100%, rgba(131,221,203,1)));
+    background: -webkit-linear-gradient(left, rgba(121,163,231,1) 0%, rgba(123,184,222,1) 33%, rgba(131,221,203,1) 100%);
+    background: -o-linear-gradient(left, rgba(121,163,231,1) 0%, rgba(123,184,222,1) 33%, rgba(131,221,203,1) 100%);
+    background: -ms-linear-gradient(left, rgba(121,163,231,1) 0%, rgba(123,184,222,1) 33%, rgba(131,221,203,1) 100%);
+    background: linear-gradient(45deg, rgba(121,163,231,1) 0%, rgba(123,184,222,1) 33%, rgba(131,221,203,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79a3e7', endColorstr='#83ddcb', GradientType=1 );
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 5px;
+
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.main .contenedor .con a .log[type=button]:hover{
+    border-radius: 15px;
+}
+
+.main .contenedor .opt{
+    width: 100%;
+    padding: 10px 0;
+
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+.main .contenedor .opt a{
+    width: auto;
+    height: auto;
+
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+
+    text-decoration: none;
+}
+
+.main .contenedor .opt a h4{
+    text-decoration: none;
+    padding: 0 5px;
+
+    color: #1C2059;
+
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.main .contenedor .opt a h4:hover{
+    color: #7BB8DE;
+
+    font-weight: 600;
+}
+
+.der{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+.der .contenedor{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+
+    width: 90%;
+    height: 94%;  
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+}
+
+.der .contenedor .return{
+    width: 100%;
+
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: stretch;
+    align-items: center;
+}
+
+.der .contenedor .return:nth-child(1n){
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.der .contenedor .return a{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: stretch;
+    align-items: center;
+
+    text-decoration: none;
+
+    color: #666666;
+}
+
+.der .contenedor .return a:hover{
+    color: #1C2059;
+}
+
+.der .contenedor .return a:nth-child(1n){
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.der .contenedor .return a h3{
+    width: auto;
+
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.der .contenedor .return a img{
+    height: 10px;
+
+    padding: 0 5px;
+
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+
+    display: block;
+}
+
+.izq{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+.izq .contenedor{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+
+    width: 90%;
+    height: 94%;  
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+}
+
+.izq .contenedor .logo{
+    width: 100%;
+
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.izq .contenedor .logo img{
+    width: 25%;
+}
