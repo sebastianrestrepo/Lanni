@@ -1,141 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE htlm>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Lanni: Home</title>
+        <title>Lanni</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="styles.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="main.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Open+Sans:400,600,700,800" rel="stylesheet">
+
     </head>
-
     <body>
+        <div class="mapa" >
 
-
-        <section class="container-fluid"><!--aqui inicia el contenedor-->
-            <section class="row"><!--aqui inicia el row (fila)-->
-
-                <div class="dash col-md-2" style="padding: 0"><!--aqui inicia el dashboar-->
-                    <section class="profile">
-                        <img src="img/profile.png" alt="">
-                        <div>
-                            <h4>Nicolas Martinez</h4>
-                            <p>Espanol</p>
-                        </div>
-                    </section>
-                    <section class="menu">
-                        <ul>
-                            <li><a href="#"><img src="img/icono/2.svg" alt=""><h3>Home</h3></a></li>
-                            <li><a href="#"><img src="img/icono/4.svg" alt=""><h3>Profile</h3></a></li>
-                            <li><a href="#"><img src="img/icono/3.svg" alt=""><h3>Chat</h3></a></li>
-                            <li><a href="#"><img src="img/icono/1.svg" alt=""><h3>Query</h3></a></li>
-                            <li><a href="#"><img src="img/icono/5.svg" alt=""><h3>Settings</h3></a></li>
-                        </ul>
-                    </section>
-                    <section class="salir">
-                        <a href="#"><img src="img/icono/salir.svg" alt=""><h3>Log out</h3></a>
-                    </section>
-                </div><!--aqui termina el dashboard-->
-
-                <div class="main col-md-10" style="padding: 0"><!--aqui inicia el main-->
-
-                    <div class="findpeople col-md-12">
-                        <h1>Find people who share your loves and likes!</h1>
-
-                        <div id="cards">
-                            <div class="allizamuller">
-
-                                <div class="image">
-                                    <img src="src/home/fotoCardUno.png" alt="">
-                                </div>
-                                <!--<div class=contbanderas>-->
-
-                                <!--style="item-align: center;"-->  
-                                <div class="detalles">
-
-                                    <div class="parte">
-
-                                        <div class="contbanderas">
-                                            <div class="banderas"><img src="src/home/flagsCardUno.png" alt="" ></div> </div>    
-                                    </div>
-
-                                    <div class= "titulos">
-                                        <h2>Alliza Muller</h2>
-                                        <h4>Berlín, Germany</h4>
-                                    </div>
-
-                                    <div class="tags">
-                                        <p>#BBKing</p>
-                                        <p>#MichaelEnde</p>
-                                        <p>#Rock</p>
-                                        <p>#Pixar</p>
-                                        <p>#Oasis</p>
-                                        <p>#Goethe</p>
-                                        <p>#PinkFloyd</p>
-                                    </div>
-                                    <div class="button_section">
-
-
-
-                                        <button type="button">Chat</button>
-
-                                    </div>
-                                </div>
-
+            <div class=container-fluid mapa>
+                <div class="header">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <img class="logoRes" src="src/logoWhite.png" alt="" style="width: 150px">
+                            <div class="botones">
+                                <a  href="#">  <button class="btn btn-in">Sign In</button></a>
+                                <a href="file:///C:/Users/Estefania%20Monta%C3%B1a%20B/Desktop/REGISTER/index.html"> <button class="btn btn-create">Create an account</button></a>
                             </div>
-                        </div>
 
-                    </div>
-
-
-                    <div class="explore col-md-12" style="padding: 0">
-                        <div class="cat col-md-12" style="padding: 0">
-                            <h1>Explore</h1>
-
-                            <div class="menu col-md-12" style="padding: 0">
-                                <div class="botonesbarra">
-                                    <button class="btn btn-default">ALL</button>
-                                    <button class="btn btn-default" id="music">MUSIC</button>
-                                    <button class="btn btn-default">MOVIES</button>
-                                    <button class="btn btn-default">BOOKS</button>
-                                    <button class="btn btn-default">SERIES</button>
-                                </div>
-                                <div class="barra" style="padding: 0">
-                                    <button class="btn btn-link">All</button>
-                                    <button class="btn btn-link">Genre</button>
-                                    <button class="btn btn-link">Artist</button>
-                                    <button class="btn btn-link">Album</button>
-                                </div>
-
-                                <div class="photogrid col-md-12">
-                                    <div>
-                                        <img src="src/home/thexx.png" alt="">
-                                    </div>
-                                    <div>
-                                        <img src="src/home/eddievedder.png" alt="">
-                                    </div>
-                                    <div>
-                                        <img src="src/home/juliancasablancas.png" alt="">
-                                    </div>
-                                    <div>
-                                        <img src="src/home/jorgedrexler.png" alt="">
-                                    </div>
-                                    <div>
-                                        <img src="src/home/ledzeppelin.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                </div><!--aqui termina el main-->
-            </section><!--aqui termina el row (fila)-->
-        </section><!--aqui termina el contenedor-->
+                </div>
 
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-10 col-offset-1" >
+                        <h1 class="h1">Learn new languages with friends around the world.</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-10 col-offset-1" >
+                        <h4 class="h4">Apply your linguistic skills by interacting with people from all over the world who share your tastes.</h4>
+
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-10 col-offset-1" >
+                        <a href="file:///C:/Users/Estefania%20Monta%C3%B1a%20B/Desktop/REGISTER/index.html"> <button class="btn yellow" style="width: 100%">Join us now!</button></a>
+                    </div>
+                </div>
+            </div>
+            <img class="skyWhiteRes" src="src/skylineWhite.png" alt="">
+        </div>
+
+
+        <div class="chicas">
+            <img class="img-responsive chicas" src="src/girls.png" style="width:100%">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6  ">
+                        <h2 class="h2 chicas">Find people that shares your passions and boost your learning of new languages.</h2>
+                    </div>
+
+                    <div class="col-md-6 ">
+                        <p class="p chicas">Learning a new language can be challenging. With that in mind, we have created a space that will help you apply your knowledge in other languages in the best possible way: interacting with native speakers.
+                            <br><br>
+                            Don’t give it a second thought! Build your own learning network right now with people from around the world who share your tastes and start developing your linguistic skills with Lanni.
+                        </p>
+                        <a href="file:///C:/Users/Estefania%20Monta%C3%B1a%20B/Desktop/REGISTER/index.html"> <button class="btn btn-chicas">Start learning! Create an account.</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comoFunciona">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="h2 how">How it works</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-md-3">
+                        <img src="src/heart.png" alt="" style="height: 90px">
+                        <p class="p how">Indicate your tastes in music, movies, series and books.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="src/conexion.png" alt="" style="height: 90px">
+                        <p class="p how">Find like-minded people with whom you can practice the languages of your interest.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="src/learn.png" alt="" style="height: 100px">
+                        <p class="p how">Improve your language skills in the languages you want to learn or improve.</p>
+                    </div>
+                </div>
+            </div>
+            <img class="transitionRes" src="src/transition.png" alt="">
+
+        </div>
+        <div class="speakers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2 class="h2 speak">Practice languages with native speakers around the globe.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="platf">
+            <img class="peopleRes" src="src/gente.png" alt="">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8"> 
+                        <h2 class="h2 pla">Stay in contact with what you love, link your accounts from:</h2></div>
+                </div>
+                <div class="row justify-content-around">
+
+                    <img class="spotify"src="src/spotify.png" alt="" >
+                    <img  class="netflix"src="src/netflix.png" alt="" >
+                    <img  class="last"src="src/last.png" alt="" >
+                    <img  class="kindle"src="src/kindle.png" >
+                    <img  class="youtube"src="src/youtube.png" alt="">
+
+
+                </div>
+            </div>
+            <img class="transitionRes" src="src/transition.png" alt="">
+        </div>
+        <div class="fin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h2 class="h2 fin">Sign Up and start improving your linguistic skills!</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="file:///C:/Users/Estefania%20Monta%C3%B1a%20B/Desktop/REGISTER/index.html">    <button class="btn btn-fin">Create an account! It's free.</button></a>
+
+                    </div>
+                </div>
+            </div>
+            <img class="cityRes" src="src/Asset%2013.png" alt="">
+        </div>
     </body>
 </html>
